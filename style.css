@@ -1,0 +1,150 @@
+*{
+ box-sizing: border-box;
+}
+
+html{
+ background-image: url("/images/bg-image.jpg");
+ background-size: cover;
+ background-repeat:  no-repeat;
+ background-position: center;
+ background-attachment: fixed;
+}
+
+body{
+ width:100vw;
+ min-height:100vh;
+ margin:0;
+ padding:0;
+ font-size:1.5rem;
+ line-height: 2;
+}
+
+header{
+ width:100%;
+ height:max-content;
+ padding:0;
+ margin:0;
+ background-color: rgb(252, 252, 252);
+}
+
+#logo{
+ max-width:100%;
+ margin:10px 0 40px 10px;
+ border-radius:2px;
+ }
+ 
+a{
+ text-decoration: none;
+}
+
+nav{
+ width:100%;
+ height: max-content;
+ margin:0 auto;
+ padding:50px 0 15px 0;
+ background-color: rgb(252, 252, 252);
+ box-shadow:0px 15px 10px -15px #111;
+ position:-webkit-sticky;
+ position:sticky;
+ top:0;
+
+ @media (min-width:500px){
+  padding:20px;
+ }
+}
+
+nav ul{
+list-style-type:none;
+margin:0;
+padding:0;
+}
+
+.flexbox{
+ display:flex;
+ justify-content:center;
+ flex-wrap:wrap;
+}
+
+.flexbox li{
+ margin: 0 30px 0 0;
+}
+
+.flexbox li a{
+ color:rgb(236, 161, 0);
+ font-weight:600;
+ padding:10px 20px;
+ border-right:1px solid gold;
+}
+
+.flexbox li a:hover{
+ color: goldenrod;
+ background-color: rgba(240, 198, 60, 0.192);
+ border-radius: 2px;
+}
+
+.flexbox li a:active{
+ background-color: goldenrod;
+ color:rgb(77, 58, 12);
+}
+
+main{
+ box-sizing: border-box;
+ width:90%;
+ margin: 10px auto;
+ padding:10px 0;
+}
+
+h1{
+ padding: 25px 0;
+ margin: 30px 0;
+ font-size:2.4rem;
+ text-align:center;
+ color:rgb(7, 25, 104);
+ background-color: rgba(255, 248, 248, 0.705);
+}
+
+section{
+ box-sizing: border-box;
+ width:100%;
+ margin: 0 auto;
+ padding:10px;
+ background-color: rgba(252, 252, 252, 0.651);
+ border-radius: 2px;
+}
+
+ol li {
+ font-weight: 600;
+ font-size: 1.7rem;
+ color:rgb(7, 25, 104);
+}
+
+ul{
+ list-style:inside;
+}
+
+ul li{
+ color: rgb(48, 47, 47);
+ font-weight:500;
+ font-size: 1.5rem;
+}
+
+footer{
+ margin:0;
+ color:white;
+ background-color: rgb(19, 2, 48);
+}
+
+.footer-div{
+ width:50%;
+ margin:0 auto;
+ text-align:center;
+ line-height: 1.1;
+ padding: 20px;
+}
+
+@media only screen and (max-width:400px){
+ body{
+  font-size:1rem;
+  color:red;
+ }
+}
